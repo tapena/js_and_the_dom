@@ -1,0 +1,173 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="id1">Alexander Hamilton</h1> 
+
+<button type="button" 
+onclick="document.getElementById('id1').style.color = 'red'; .padding-left = 100 px">
+Click Me!
+</button>
+
+<p>Alexander Hamilton (January 11, 1755 or 1757 – July 12, 1804) was an American statesman and one of the Founding Fathers of the United States. He was an influential interpreter and promoter of the U.S. Constitution, as well as the founder of the nation's financial system, the Federalist Party, the United States Coast Guard, and The New York Post newspaper.</p>
+
+
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Example</title>
+
+  <style>
+
+.red {
+    color: red;
+} 
+
+.padding {
+  padding-left: 400px;
+}
+</style>
+
+</head>
+<body>
+  <h1 class="" onclick="turnRed()">Alexander Hamilton</h1>
+  <h2 class="city">London</h2>
+  <p onclick="doSomethingP1()">Alexander Hamilton (January 11, 1755 or 1757 – July 12, 1804) was an American statesman and one of the Founding Fathers of the United States. He was an influential interpreter and promoter of the U.S. Constitution, as well as the founder of the nation's financial system, the Federalist Party, the United States Coast Guard, and The New York Post newspaper.</p>
+  <script>
+    function makeChange() {
+      turnRed();
+      padding1();
+    }
+    function turnRed() {
+      var h1Tag = document.querySelector('h1');
+      h1Tag.classList.add('red');
+    }
+
+    function padding1() {
+      var h1Tag = document.querySelector('h1');
+      h1Tag.classList.add('padding');
+    }
+
+  </script>
+
+
+  <button type="button"
+onclick="makeChange()">
+Click Me!
+</button>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Example</title>
+</head>
+<body>
+  <p onclick="changeParagraph">first p tag</p>
+  <p onclick="changeParagraph">second p tag</p>
+  <p onclick="changeParagraph">third p tag</p>
+  <p onclick="changeParagraph">fourth p tag</p>
+
+<script>
+  function changeParagraph() {
+    var pTag = document.querySelectorAll('p');
+    pTag.classList.add('red')
+  }
+</script>
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+div.a {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+div.b {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+div.c {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+div.d {
+    text-decoration-line: overline underline;
+    text-decoration-style: wavy;
+}
+</style>
+</head>
+<body>
+<h1>Javascript Example</h1>
+
+<div class="a">Pay Bills.</div>
+<br>
+
+<div class="b">This is some text with a wavy underline.</div>
+<br>
+
+<div class="c">Wash Car.</div>
+<br>
+
+<div class="d">Get Laundry.</div>
+
+
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Example</title>
+  <style type="text/css">
+    .complete {
+      text-decoration: line-through;
+    }
+
+    .hidden {
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <p onclick="toggleComplete(this)">Pay bills</p>
+  
+    
+  <p onclick="toggleComplete(this)">Wash car</p>
+  <p onclick="toggleComplete(this)">Get laundry</p>
+
+  <button onclick="removeCompleteTasks()">Remove Completed Tasks</button>
+  <button onclick="UnremoveCompleteTasks()">Unremove Completed Tasks</button>
+  
+  <script type="text/javascript">
+    function toggleComplete(pTag) {
+      pTag.classList.toggle('complete')
+
+
+    }
+
+    function removeCompleteTasks() {
+      var pTags = document.querySelectorAll('p')
+      pTags.forEach(function(pTag) {
+        pTag.classList.add('hidden');
+      });
+    }
+  </script>
+</body>
+</html> -->
